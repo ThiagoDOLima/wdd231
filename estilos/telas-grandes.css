@@ -1,0 +1,67 @@
+/* Estilos para telas grandes */
+
+@media screen and (min-width: 700px) {
+    .cabecalho {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .marca {
+        font-size: 1.6rem;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .navegacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .navegacao a {
+        border-top: none;
+        border-radius: 5px;
+        padding: 0.7rem 1.2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .conteudo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .sobre {
+        grid-column: 1 / -1;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .conteudo {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .sobre {
+        grid-column: auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}

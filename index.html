@@ -4,11 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Documento</title>
+
+    <meta name="description" content="Página inicial do portfólio de Thiago Lima para o curso WDD131.">
+    <meta name="author" content="Thiago de Oliveira Lima">
+
+    <title>Página Inicial | WDD131</title>
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <div class="cabecalho">
+            <a class="marca" href="index.html">
+                <img src="imagens/logo.svg" alt="Logotipo do site">
+                <span>Thiago Lima</span>
+            </a>
 
+            <button id="menu" class="botao-menu" type="button" aria-label="Abrir menu de navegação"
+                aria-expanded="false" aria-controls="menuLinks">
+                ☰
+            </button>
+        </div>
+
+        <nav id="menuLinks" class="navegacao">
+            <a href="index.html" class="ativo">Página Inicial</a>
+            <a href="chamber/">Projeto da Câmara</a>
+            <a href="projeto-final/">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página Inicial</h1>
+
+        <div class="conteudo">
+            <section class="card sobre">
+                <h2>Sobre Mim</h2>
+
+                <p>
+                    Olá! Meu nome é Thiago Lima. Trabalho com suporte
+                    de TI e estou estudando Desenvolvimento de Software.
+                    Gosto de aprender novas tecnologias e desenvolver
+                    soluções que facilitem o dia a dia das pessoas.
+                </p>
+
+                <p>
+                    Meu objetivo é ampliar meus conhecimentos em
+                    programação e desenvolvimento web.
+                </p>
+            </section>
+
+            <section class="card projetos">
+                <h2>Projetos</h2>
+
+                <article>
+                    <h3>Projeto da Câmara</h3>
+                    <p>
+                        Um site desenvolvido para apresentar informações
+                        sobre uma câmara de comércio.
+                    </p>
+                    <a href="chamber/">Ver projeto</a>
+                </article>
+
+                <article>
+                    <h3>Projeto Final</h3>
+                    <p>
+                        Um projeto para aplicar os conhecimentos
+                        adquiridos durante o curso.
+                    </p>
+                    <a href="projeto-final/">Ver projeto</a>
+                </article>
+            </section>
+
+            <section class="card cursos">
+                <h2>Cursos e Aprendizado</h2>
+
+                <p>
+                    Estou desenvolvendo minhas habilidades nas seguintes
+                    áreas:
+                </p>
+
+                <ul>
+                    <li>HTML semântico</li>
+                    <li>CSS responsivo</li>
+                    <li>JavaScript e DOM</li>
+                    <li>Controle de versão com Git e GitHub</li>
+                </ul>
+
+                <p>
+                    Cada atividade é uma oportunidade de praticar
+                    e melhorar minhas habilidades.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes-sociais">
+            <a href="https://github.com/ThiagoDOLima" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                Instagram
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="anoAtual"></span>
+            Thiago de Oliveira Lima |
+            São Paulo, Brasil
+        </p>
+
+        <p id="ultimaModificacao"></p>
+    </footer>
 </body>
 
 </html>
