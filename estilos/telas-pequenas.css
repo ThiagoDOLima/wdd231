@@ -181,3 +181,92 @@ footer p {
     outline: 3px solid var(--cor-destaque);
     outline-offset: 3px;
 }
+
+/* Seção de certificados e cursos */
+
+.filtros-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filtro {
+    padding: 0.65rem 0.85rem;
+    border: 2px solid #08506d;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #08506d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtro:hover,
+.filtro:focus-visible {
+    background-color: #eaf7f5;
+}
+
+.filtro.ativo {
+    background-color: #08506d;
+    color: #ffffff;
+}
+
+.lista-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cartao-curso {
+    min-width: 0;
+    padding: 1rem;
+    border: 2px solid #c5d8d8;
+    border-left: 6px solid #08506d;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow-wrap: anywhere;
+}
+
+.cartao-curso h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #08506d;
+}
+
+.cartao-curso p {
+    margin: 0.5rem 0;
+}
+
+.cartao-curso .nome-curso {
+    font-weight: bold;
+}
+
+.cartao-curso.concluido {
+    border-color: #287447;
+    border-left-color: #287447;
+    background-color: #edf8f0;
+}
+
+.cartao-curso.concluido h3 {
+    color: #205d37;
+}
+
+.status-curso {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.cartao-curso.concluido .status-curso {
+    color: #205d37;
+}
+
+#total-creditos {
+    padding: 0.75rem;
+    border-radius: 5px;
+    background-color: #eaf7f5;
+    color: #08506d;
+    font-weight: bold;
+    text-align: center;
+}

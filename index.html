@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <!--
+    1. Adicione a estrutura padrão do documento HTML ao documento.
+    2. Adicione os elementos necessários a <head>, incluindo o title, meta description e meta author.
+    3. Use HTML semântico para criar a estrutura básica do layout da página.
+    Use um elemento header, um nav, um main e um footer.
+    4. Adicione o conteúdo conforme mostrado nas capturas de tela de exemplo acima.
+
+    -->
 
 <head>
     <meta charset="UTF-8">
@@ -29,9 +37,12 @@
 
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
 </head>
 
 <body>
+    <!-- 5. Nesta classe, o limite de tamanho de cada imagem é de 125 kB. -->
+    <!-- 6.A tag <header> precisa conter um logotipo do site (usando um arquivo svg) e seu nome renderizado com uma tag <span> e um ícone de hambúrguer em telas pequenas. -->
     <header>
         <div class="cabecalho">
             <a class="marca" href="index.html">
@@ -44,13 +55,21 @@
                 ☰
             </button>
         </div>
-
+        <!-- 7.O menu de navegação responsivo <nav> contém três links: -->
         <nav id="menuLinks" class="navegacao">
             <a href="index.html" class="ativo">Página Inicial</a>
+            <!-- Projeto da Câmara – terá um link para o projeto do site da câmara de comércio (semana 02). -->
             <a href="https://github.com/ThiagoDOLima/">Projeto da Câmara</a>
+            <!-- 7. Projeto Final – terá link para o projeto final (semana 06). -->
             <a href="https://github.com/ThiagoDOLima/">Projeto Final</a>
         </nav>
     </header>
+
+    <!--
+    8. O elemento <main> contém o seguinte:
+    Página Inicial renderizada com uma tag <h1>.
+    Três tags <section> com títulos <h2>, conforme mostrado nas capturas de tela de exemplo acima.
+    -->
 
     <main>
         <h1>Página Inicial</h1>
@@ -94,30 +113,49 @@
                 </article>
             </section>
 
-            <section class="card cursos">
-                <h2>Cursos e Aprendizado</h2>
-
-                <p>
-                    Estou desenvolvendo minhas habilidades nas seguintes
-                    áreas:
-                </p>
-
-                <ul>
-                    <li>HTML semântico</li>
-                    <li>CSS responsivo</li>
-                    <li>JavaScript e DOM</li>
-                    <li>Controle de versão com Git e GitHub</li>
-                </ul>
-
-                <p>
-                    Cada atividade é uma oportunidade de praticar
-                    e melhorar minhas habilidades.
-                </p>
-            </section>
+            <!-- Copie este array de objetos do curso em um arquivo 
+             JavaScript: Array de Lista de Cursos 
+            -->
         </div>
+
+        <section class="card cursos" id="certificados">
+            <h2>Certificado de Programação de Computadores e Web</h2>
+        
+            <div class="filtros-cursos" aria-label="Filtrar cursos">
+                <button type="button" class="filtro ativo" data-filtro="TODOS" aria-pressed="true">
+                    Todos os Cursos
+                </button>
+        
+                <button type="button" class="filtro" data-filtro="WDD" aria-pressed="false">
+                    Cursos WDD
+                </button>
+        
+                <button type="button" class="filtro" data-filtro="CSE" aria-pressed="false">
+                    Cursos CSE
+                </button>
+            </div>
+        
+            <p id="total-creditos" aria-live="polite">
+                Total de créditos: 0
+            </p>
+        
+            <div id="lista-cursos" class="lista-cursos">
+                <!-- Os cartões serão criados pelo JavaScript -->
+            </div>
+        </section>
     </main>
+    <!-- 
+    9. O elemento <footer> tem três itens.
+    -->
 
     <footer>
+        <!--
+        
+        1. O primeiro item é uma série de links de mídia social, 
+        incluindo GitHub e LinkedIn, mais um ou dois da sua escolha. 
+        Esses ícones devem estar vinculados ao seu repositório do GitHub e à sua conta do LinkedIn.
+        
+        -->
         <div class="redes-sociais">
             <a href="https://github.com/ThiagoDOLima" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 GitHub
@@ -132,11 +170,22 @@
             </a>
         </div>
 
+        <!--
+        A próxima linha contém o seguinte:
+        o símbolo de direitos autorais e o ano atual, escritos dinamicamente usando JavaScript
+        seu nome / seu estado ou país        
+        -->
+
         <p>
             &copy; <span id="anoAtual"></span>
             Thiago de Oliveira Lima |
             São Paulo, Brasil
         </p>
+
+        <!--
+        O segundo parágrafo tem um id de "ultimaModificacao" 
+        e será preenchido dinamicamente, com código JavaScript.
+        -->
 
         <p id="ultimaModificacao"></p>
     </footer>
