@@ -106,6 +106,7 @@ h2 {
     font-size: 1.25rem;
     border-radius: 5px;
     font-family: "Roboto", Arial, sans-serif;
+    text-align: center;
 }
 
 h3 {
@@ -144,6 +145,19 @@ h3 {
 
 .card li {
     margin-bottom: 0.4rem;
+}
+
+.card-foto{
+    border-radius: 8px;
+    border: 1px solid #064f70;
+    display: block;
+    margin: 0 auto;
+        /* Zera a margem em cima/baixo e centraliza nas laterais */
+    width: 250px;
+        /* Altere para o tamanho que desejar em pixels */
+    height: auto;
+        /* Mantém a proporção original para não distorcer */
+
 }
 
 footer {
