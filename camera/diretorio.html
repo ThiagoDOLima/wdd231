@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça as empresas participantes da Câmara de Comércio do Capão Redondo, em São Paulo.">
+    <meta name="author" content="Thiago de Oliveira Lima">
+
+    <meta property="og:title" content="Câmara de Comércio do Capão Redondo">
+    <meta property="og:description" content="Fortalecendo o comércio local e construindo oportunidades.">
+    <meta property="og:type" content="website">
+
+    <title>Diretório de Empresas | Câmara de Comércio do Capão Redondo</title>
+
+    <link rel="icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a class="marca" href="diretorio.html">
+                <span class="marca-simbolo">CC</span>
+                <span class="marca-texto">
+                    <strong>Câmara de Comércio</strong>
+                    <small>Capão Redondo</small>
+                </span>
+            </a>
+
+            <button id="botao-menu" aria-label="Abrir menu de navegação">
+                ☰
+            </button>
+
+            <nav id="menu-principal">
+                <a href="diretorio.html" class="ativo">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#empresas">Empresas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <div class="destaque-conteudo">
+                <p class="subtitulo">Comércio local • Capão Redondo • São Paulo</p>
+                <h1>Fortalecendo o comércio local, construindo oportunidades.</h1>
+                <p>
+                    Conheça empresas da nossa região e descubra como o comércio
+                    local contribui para o desenvolvimento da comunidade.
+                </p>
+                <a class="botao" href="#empresas">Conheça as empresas</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Comércio forte, comunidade valorizada</h2>
+            <p>
+                A Câmara de Comércio do Capão Redondo é um projeto acadêmico
+                que representa a união de empresas locais em busca de
+                oportunidades, colaboração e desenvolvimento regional.
+            </p>
+        </section>
+
+        <section id="empresas" class="diretorio">
+            <div class="titulo-diretorio">
+                <div>
+                    <p class="subtitulo">Conheça nossos participantes</p>
+                    <h2>Diretório de empresas</h2>
+                </div>
+
+                <div class="controles">
+                    <button id="visualizacao-grade" class="selecionado">
+                        Grade
+                    </button>
+                    <button id="visualizacao-lista">
+                        Lista
+                    </button>
+                </div>
+            </div>
+
+            <div id="lista-empresas" class="grade-empresas">
+                <p>Carregando empresas...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <strong>Câmara de Comércio do Capão Redondo</strong>
+                <p>Capão Redondo — São Paulo, SP</p>
+                <p>Projeto acadêmico WDD 231</p>
+            </div>
+
+            <div>
+                <p>Desenvolvido por Thiago de Oliveira Lima</p>
+                <p>BYU - Desenvolvimento de Software</p>
+                <p>© <span id="ano-atual"></span> Câmara de Comércio</p>
+                <p>Última atualização: <span id="ultima-atualizacao"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
