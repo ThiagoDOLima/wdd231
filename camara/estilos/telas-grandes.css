@@ -48,3 +48,34 @@
         justify-content: space-between;
     }
 }
+
+  /* =========================================
+     ESTILOS DA PÁGINA INICIAL (DESKTOP)
+     ========================================= */
+
+  .hero-img {
+      height: 450px;
+  }
+
+  .hero-cta {
+      width: auto;
+      min-width: 500px;
+      padding: 2.5rem;
+  }
+
+  .hero-cta h1 {
+      font-size: 2.2rem;
+  }
+
+  .layout-grid-inicio {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      /* Coluna esquerda (1 parte), Coluna direita (2 partes) */
+      align-items: start;
+  }
+
+  .grade-destaques {
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }

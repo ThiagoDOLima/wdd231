@@ -301,3 +301,170 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
 }
+
+/* =========================================
+   ESTILOS DA PÁGINA INICIAL (MOBILE)
+   ========================================= */
+
+/* Hero Image com Tag IMG (Conforme requisito) */
+.hero-container {
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caixa de CTA (Call to Action) por cima da imagem */
+.hero-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(23, 50, 77, 0.9);
+    /* Azul marinho com opacidade */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    width: 90%;
+    border-radius: 8px;
+    border: 2px solid #FFD700;
+}
+
+.hero-cta h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #FFD700;
+}
+
+.botao-primario {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #17324D;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout dos Painéis */
+.layout-grid-inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.painel {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.painel h2 {
+    color: var(--cor-primaria);
+    margin-top: 0;
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 0.5rem;
+}
+
+/* Clima */
+.clima-hoje {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.clima-hoje img {
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+}
+
+.temp-atual {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--cor-primaria);
+}
+
+.desc-atual {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.previsao-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.previsao-lista li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--cor-borda);
+}
+
+/* Destaques (Ouro/Prata) */
+.grade-destaques {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-destaque {
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-destaque .card-topo {
+    position: relative;
+    height: 150px;
+}
+
+.card-destaque .card-topo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-destaque .badge-nivel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFD700;
+    color: #17324D;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.card-destaque .card-info {
+    padding: 1rem;
+}
+
+.card-destaque .card-info h3 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+}
+
+.card-destaque .card-info a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0F4C81;
+    font-weight: bold;
+}

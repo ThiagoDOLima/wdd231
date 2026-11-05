@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Página Inicial da Câmara de Comércio do Capão Redondo, SP. Junte-se a nós para fortalecer o comércio local.">
+    <meta name="author" content="Thiago de Oliveira Lima">
+
+    <meta property="og:title" content="Início | Câmara de Comércio do Capão Redondo">
+    <meta property="og:description" content="Apoiando empresas e desenvolvendo a comunidade do Capão Redondo.">
+    <meta property="og:type" content="website">
+
+    <title>Início | Câmara de Comércio do Capão Redondo</title>
+
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <!-- Script específico da Página Inicial -->
+    <script src="scripts/inicio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a class="marca" href="index.html">
+                <span class="marca-simbolo">CC</span>
+                <span class="marca-texto">
+                    <strong>Câmara de Comércio</strong>
+                    <small>Capão Redondo</small>
+                </span>
+            </a>
+
+            <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="menu-principal" aria-label="Menu principal">
+                <a href="index.html" class="ativo">Página Inicial</a>
+                <a href="diretorio.html">Diretório</a>
+                <a href="associe-se.html">Associe-se</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="eventos.html" class="desativado" aria-disabled="true" title="Em breve">Eventos</a>
+                <a href="podcast.html" class="desativado" aria-disabled="true" title="Em breve">Podcast</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Requisito: Imagem principal (Hero) usando tag <img> e CTA -->
+        <section class="hero-container">
+            <picture>
+                <!-- Dica: Você precisará salvar uma imagem chamada hero.jpg na pasta imagens -->
+                <source media="(min-width: 768px)"
+                    srcset="https://upload.wikimedia.org/wikipedia/commons/3/39/Imagem_a%C3%A9rea_Cap%C3%A3o_Redondo.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
+                    alt="2018, mostra parte do bairro do Capão Redondo, zona sul ">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Plataforma_Esta%C3%A7%C3%A3o_Cap%C3%A3o_Redondo_%282%29.jpg/1280px-Plataforma_Esta%C3%A7%C3%A3o_Cap%C3%A3o_Redondo_%282%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+                    alt="Estação Capão Redondo" class="hero-img" width="1200"
+                    height="600">
+            </picture>
+
+            <div class="hero-cta">
+                <h1>Faça parte do crescimento do Capão Redondo</h1>
+                <p>Junte-se à Câmara de Comércio e impulsione o seu negócio local.</p>
+                <a href="associe-se.html" class="botao-primario">Associe-se à Câmara</a>
+            </div>
+        </section>
+
+        <div class="layout-grid-inicio">
+            <!-- Coluna Esquerda: Eventos e Clima -->
+            <div class="coluna-info">
+                <!-- Requisito: Seção de eventos atuais -->
+                <section class="painel eventos-atuais">
+                    <h2>📅 Eventos Atuais</h2>
+                    <ul>
+                        <li><strong>Feira de Negócios Locais</strong> - 15 de Novembro, às 10h na Praça Central.</li>
+                        <li><strong>Workshop de Marketing Digital</strong> - 22 de Novembro, Online via Zoom.</li>
+                        <li><strong>Reunião de Networking</strong> - Toda primeira terça-feira do mês.</li>
+                    </ul>
+                </section>
+
+                <!-- Requisito: Seção de tempo (preenchida via JS) -->
+                <section class="painel clima-local">
+                    <h2>☀️ Clima no Capão Redondo</h2>
+                    <div id="dados-clima">
+                        <p>Carregando dados meteorológicos...</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Coluna Direita: Destaques -->
+            <div class="coluna-destaques">
+                <!-- Requisito: Empresas em Destaque (preenchidas via JS) -->
+                <section class="painel">
+                    <h2>🏆 Nossos Membros em Destaque</h2>
+                    <p class="sub-texto">Apoiando as empresas Ouro e Prata da nossa comunidade.</p>
+                    <div id="container-destaques" class="grade-destaques">
+                        <p>Carregando destaques...</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <strong>Câmara de Comércio do Capão Redondo</strong>
+                <p>Capão Redondo — São Paulo, SP</p>
+                <p>Projeto acadêmico WDD 231</p>
+            </div>
+            <div>
+                <p>Desenvolvido por Thiago de Oliveira Lima</p>
+                <p>BYU - Desenvolvimento de Software</p>
+                <p>© <span id="ano-atual"></span> Câmara de Comércio</p>
+                <p>Última atualização: <span id="ultima-atualizacao"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
