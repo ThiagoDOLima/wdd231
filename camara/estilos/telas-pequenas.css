@@ -5,6 +5,8 @@
     --cor-texto: #222222;
     --cor-card-bg: #FFFFFF;
     --cor-borda: #E0E4E8;
+    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-titulos: 'Montserrat', sans-serif;
 }
 
 body {
@@ -13,6 +15,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: var(--fonte-principal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fonte-titulos);
 }
 
 /* Header & Navegação Mobile */
