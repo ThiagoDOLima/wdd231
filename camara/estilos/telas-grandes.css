@@ -20,6 +20,13 @@
         border-radius: 4px;
     }
 
+    /* Mantém o destaque com cores sólidas em telas grandes */
+    nav#menu-principal a.ativo,
+    nav#menu-principal a:hover {
+        background-color: #FFD700;
+        color: #17324D;
+    }
+
     .titulo-diretorio {
         flex-direction: row;
         justify-content: space-between;
