@@ -1,0 +1,65 @@
+[
+    {
+        "nome": "Tech Capão",
+        "endereco": "Estrada de Itapecerica, 1200 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 98765-4321",
+        "website": "https://example.com/techcapao",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=Tech+Cap%C3%A3o",
+        "nivel": 3,
+        "descricao": "Assistência técnica especializada em informática, manutenção de PCs e smartphones."
+    },
+    {
+        "nome": "Mercado União",
+        "endereco": "Av. Comendador Sant'Anna, 450 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 97654-3210",
+        "website": "https://example.com/mercadouniao",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=Mercado+Uni%C3%A3o",
+        "nivel": 2,
+        "descricao": "Produtos alimentícios frescos, hortifrúti e mercadorias gerais para a comunidade."
+    },
+    {
+        "nome": "ConstruCapão",
+        "endereco": "Rua Henrique Sam Mindlin, 880 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 96543-2109",
+        "website": "https://example.com/construcapao",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=ConstruCap%C3%A3o",
+        "nivel": 3,
+        "descricao": "Materiais de construção do básico ao acabamento, reformas e ferramentas."
+    },
+    {
+        "nome": "Clínica Vida",
+        "endereco": "Estrada de Itapecerica, 2500 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 95432-1098",
+        "website": "https://example.com/clinicavida",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=Cl%C3%ADnica+Vida",
+        "nivel": 2,
+        "descricao": "Atendimento médico popular, exames laboratoriais e consultas odontológicas."
+    },
+    {
+        "nome": "Contabilidade Lima",
+        "endereco": "Rua Capão Redondo, 105 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 94321-0987",
+        "website": "https://example.com/contabilidadelima",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=Contabilidade+Lima",
+        "nivel": 1,
+        "descricao": "Consultoria contábil, abertura de empresas e gestão fiscal para MEIs e pequenas empresas."
+    },
+    {
+        "nome": "Sabor da Zona Sul",
+        "endereco": "Av. Ellis Maas, 320 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 93210-9876",
+        "website": "https://example.com/sabordazonasul",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=Sabor+da+Zona+Sul",
+        "nivel": 1,
+        "descricao": "Restaurante com o melhor da culinária caseira, marmitex e pratos comerciais."
+    },
+    {
+        "nome": "Academia Movimento",
+        "endereco": "Estrada de Itapecerica, 3100 - Capão Redondo, São Paulo - SP",
+        "telefone": "(11) 92109-8765",
+        "website": "https://example.com/academiamovimento",
+        "imagem": "https://via.placeholder.com/300x200/17324D/ffffff?text=Academia+Movimento",
+        "nivel": 2,
+        "descricao": "Musculação, treinos funcionais e modalidades esportivas para saúde e bem-estar."
+    }
+]

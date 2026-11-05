@@ -1,0 +1,43 @@
+/* (Desktop e Tablets) */ 
+
+@media (min-width: 768px) {
+    #botao-menu {
+        display: none;
+    }
+
+    nav#menu-principal {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: none;
+        border-top: none;
+    }
+
+    nav#menu-principal a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    .titulo-diretorio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .grade-empresas {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .lista-empresas .item-membro-lista {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rodape-conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
