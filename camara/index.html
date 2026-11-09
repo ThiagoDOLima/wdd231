@@ -63,15 +63,19 @@
         <!-- Requisito: Imagem principal (Hero) usando tag <img> e CTA -->
         <section class="hero-container">
             <picture>
-                <!-- Dica: Você precisará salvar uma imagem chamada hero.jpg na pasta imagens -->
-                <source media="(min-width: 768px)"
-                    srcset="https://upload.wikimedia.org/wikipedia/commons/3/39/Imagem_a%C3%A9rea_Cap%C3%A3o_Redondo.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
-                    alt="2018, mostra parte do bairro do Capão Redondo, zona sul ">
-                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Plataforma_Esta%C3%A7%C3%A3o_Cap%C3%A3o_Redondo_%282%29.jpg/1280px-Plataforma_Esta%C3%A7%C3%A3o_Cap%C3%A3o_Redondo_%282%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-                    alt="Estação Capão Redondo" class="hero-img" width="1200"
-                    height="600">
-            </picture>
+                    <!-- Imagem para telas maiores (desktop) -->
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="imagens/hero_desktop.jpg">
 
+                    <!-- Imagem para telas menores (mobile) -->
+                    <img
+                        src="imagens/hero-mobile.jpg"
+                        alt="Vista da estação e do bairro do Capão Redondo, zona sul de São Paulo."
+                        class="hero-img"
+                        width="1200"
+                        height="600">
+            </picture>
             <div class="hero-cta">
                 <h1>Faça parte do crescimento do Capão Redondo</h1>
                 <p>Junte-se à Câmara de Comércio e impulsione o seu negócio local.</p>
