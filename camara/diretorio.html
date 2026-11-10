@@ -16,12 +16,13 @@
     <title>Diretório de Empresas | Câmara de Comércio do Capão Redondo</title>
 
     <!-- Open Graph ok- Facebook e redes sociais -->
-    <meta property="og:title" content="Câmara de Comércio">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diretório de Empresas | Câmara de Comércio do Capão Redondo">
     <meta property="og:description"
-        content="Conheça a Câmara de Comércio: conectando empresas, empreendedores e oportunidades de negócios.">
-    <meta property="og:image" content="https://thiagodolima.github.io/wdd231/images/camara-comercio.jpg">
-    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/">
-
+        content="Conheça as empresas participantes da Câmara de Comércio do Capão Redondo, em São Paulo.">
+    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:image" content="https://thiagodolima.github.io/wdd231/camara/imagens/hero-desktop.jpg">
+    <meta property="og:image:alt" content="Vista do bairro do Capão Redondo, São Paulo.">
 
     <!-- GOOGLE FONTS (Preconnect + Stylesheet obrigatórios) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,34 +43,26 @@
 <body>
     <header>
         <div class="cabecalho">
-            <a class="marca" href="diretorio.html">
+            <a class="marca" href="index.html">
                 <span class="marca-simbolo">CC</span>
                 <span class="marca-texto">
                     <strong>Câmara de Comércio</strong>
                     <small>Capão Redondo</small>
                 </span>
             </a>
-
-            <button id="botao-menu" 
-                aria-label="Abrir menu de navegação"            
-                aria-expanded="false" 
+    
+            <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false"
                 aria-controls="menu-principal">
                 ☰
             </button>
-            <!-- Menu de Navegação -->
+    
             <nav id="menu-principal" aria-label="Menu principal">
-                <a href="index.html">Página Inicial</a>
-            
-                <a href="diretorio.html" 
-                    class="ativo" 
-                    aria-current="page">
-                    Diretório
-                </a>
-            
+                <a href="index.html" aria-current="page">Página Inicial</a> <!-- Ajuda na navegação onde está -->                 
+                <a href="diretorio.html" class="ativo" aria-current="page">Diretório</a>
                 <a href="associe-se.html">Associe-se</a>
                 <a href="sobre.html">Sobre</a>
-                <a href="eventos.html" class="desativado" aria-disabled="true" title="Em breve">Eventos</a>
-                <a href="podcast.html" class="desativado" aria-disabled="true" title="Em breve">Podcast</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="podcast.html">Podcast</a>
             </nav>
         </div>
     </header>

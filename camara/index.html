@@ -10,22 +10,17 @@
 
     <meta name="author" content="Thiago de Oliveira Lima">
 
-
-    <meta property="og:title" content="Câmara de Comércio do Capão Redondo">
-    
-    <meta property="og:description"
-        content="Conheça a Câmara de Comércio do Capão Redondo e participe do desenvolvimento dos negócios locais.">
-    
-    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/index.html">
-    
-    <meta property="og:image" content="https://thiagodolima.github.io/wdd231/camara/imagens/hero_desktop.jpg">
-
     <!-- Imagem de compartilhamento -->
-<meta property="og:image:alt"
-    content="Vista do bairro do Capão Redondo, São Paulo.">
 
-<link rel="canonical"
-    href="https://thiagodolima.github.io/wdd231/camara/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Câmara de Comércio do Capão Redondo">    
+    <meta property="og:description"
+        content="Conheça a Câmara de Comércio do Capão Redondo e participe do desenvolvimento dos negócios locais.">    
+    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/index.html">    
+    <meta property="og:image" content="https://thiagodolima.github.io/wdd231/camara/imagens/hero-desktop.jpg">
+    
+    
+    <link rel="canonical" href="https://thiagodolima.github.io/wdd231/camara/index.html">
 
     <title>Início | Câmara de Comércio do Capão Redondo</title>
 
@@ -58,12 +53,15 @@
                 </span>
             </a>
 
-            <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false">
-                ☰
+            <button id="botao-menu"
+                    aria-label="Abrir menu de navegação" 
+                    aria-expanded="false"
+                    aria-controls="menu-principal">
+                    ☰
             </button>
 
             <nav id="menu-principal" aria-label="Menu principal">
-                <a href="index.html" class="ativo">Página Inicial</a>
+                <a href="index.html" class="ativo" aria-current="page">Página Inicial</a>
                 <a href="diretorio.html">Diretório</a>
                 <a href="associe-se.html">Associe-se</a>
                 <a href="sobre.html">Sobre</a>
@@ -79,11 +77,15 @@
         
             <picture class="hero-picture">
                 <!-- Imagem para telas grandes -->
-                <source media="(min-width: 768px)" srcset="imagens/hero-desktop.jpg">
+                <source media="(min-width: 768px)" 
+                        srcset="imagens/hero-desktop.jpg">
         
                 <!-- Imagem padrão para telas pequenas -->
-                <img src="imagens/hero-mobile.jpg" alt="Vista da estação e do bairro do Capão Redondo, zona sul de São Paulo."
-                    class="hero-img" width="1200" height="600">
+                <img src="imagens/hero-mobile.jpg"
+                    alt="Vista da estação e do bairro do Capão Redondo, zona sul de São Paulo."
+                    class="hero-img" 
+                    width="1200" 
+                    height="600">
             </picture>
         
             <div class="hero-cta">
