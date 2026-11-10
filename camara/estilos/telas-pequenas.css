@@ -1,3 +1,5 @@
+/* Telas Pequenas*/
+
 :root {
     --cor-primaria: #17324D;
     /* Azul-marinho */
@@ -467,4 +469,173 @@ footer {
     margin-top: 0.5rem;
     color: #0F4C81;
     font-weight: bold;
+}
+/* Ajustes de responsividade e alinhamento */
+
+.cabecalho {
+    gap: 1rem;
+}
+
+.marca {
+    min-width: 0;
+}
+
+.marca-texto {
+    min-width: 0;
+}
+
+main,
+.diretorio,
+.titulo-diretorio,
+#lista-empresas {
+    min-width: 0;
+}
+
+.controles {
+    flex-wrap: wrap;
+}
+
+.grade-empresas {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.cartao-membro {
+    min-width: 0;
+}
+
+.cartao-corpo {
+    overflow-wrap: anywhere;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Evita rolagem horizontal */
+html,
+body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+/* =========================================
+   DIRETÓRIO DE EMPRESAS - AJUSTES RESPONSIVOS
+   ========================================= */
+
+/* Evita que elementos ultrapassem a largura da tela */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Organização do diretório */
+
+.diretorio {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-diretorio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-diretorio h2 {
+    margin-bottom: 0;
+}
+
+/* Botões de visualização */
+
+.controles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.controles button {
+    min-height: 44px;
+    padding: 0.65rem 1.2rem;
+    cursor: pointer;
+}
+
+/* Grade de empresas */
+
+.grade-empresas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+/* Cartões */
+
+.cartao-membro {
+    min-width: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.cartao-imagem {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cartao-imagem img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+/* Conteúdo dos cartões */
+
+.cartao-corpo {
+    padding: 1rem;
+}
+
+.cartao-corpo h3 {
+    overflow-wrap: anywhere;
+}
+
+.cartao-corpo p {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Visualização em lista */
+
+.lista-empresas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.item-membro-lista {
+    min-width: 0;
+    width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.item-membro-lista h3 {
+    margin-top: 0;
+}
+
+.item-membro-lista p {
+    line-height: 1.5;
 }

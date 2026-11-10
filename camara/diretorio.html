@@ -50,13 +50,22 @@
                 </span>
             </a>
 
-            <button id="botao-menu" aria-label="Abrir menu de navegação">
+            <button id="botao-menu" 
+                aria-label="Abrir menu de navegação"            
+                aria-expanded="false" 
+                aria-controls="menu-principal">
                 ☰
             </button>
             <!-- Menu de Navegação -->
             <nav id="menu-principal" aria-label="Menu principal">
                 <a href="index.html">Página Inicial</a>
-                <a href="diretorio.html">Diretório</a>
+            
+                <a href="diretorio.html" 
+                    class="ativo" 
+                    aria-current="page">
+                    Diretório
+                </a>
+            
                 <a href="associe-se.html">Associe-se</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="eventos.html" class="desativado" aria-disabled="true" title="Em breve">Eventos</a>
@@ -95,10 +104,11 @@
                 </div>
 
                 <div class="controles">
-                    <button id="visualizacao-grade" class="selecionado">
+                    <button id="visualizacao-grade" class="selecionado" aria-pressed="true">
                         Grade
                     </button>
-                    <button id="visualizacao-lista">
+                
+                    <button id="visualizacao-lista" aria-pressed="false">
                         Lista
                     </button>
                 </div>
