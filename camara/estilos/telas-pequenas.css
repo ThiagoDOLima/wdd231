@@ -531,7 +531,7 @@ body {
 
 body {
     width: 100%;
-    min-width: 320px;
+    min-width: 0px;
 }
 
 img {
