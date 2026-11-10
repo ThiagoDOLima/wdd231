@@ -99,9 +99,11 @@
   /* =========================================
      ESTILOS DA PÁGINA INICIAL (DESKTOP)
      ========================================= */
-
+        /* HERO - Desktop */
     .hero-img {
-      height: 450px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .hero-cta {
@@ -125,5 +127,14 @@
       flex-direction: row;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+        
+    .hero-container {
+        min-height: 450px;
+    }
+        
+    .hero-picture {
+        width: 100%;
+        height: 450px;
     }
 }

@@ -62,29 +62,29 @@
     <main>
         <!-- Requisito: Imagem principal (Hero) usando tag <img> e CTA -->
         <section class="hero-container">
-                     
-            <picture>
-                <!-- Imagem para telas grandes (desktop) -->
-                <source
-                    media="(min-width: 768px)"
-                    srcset="imagens/hero_desktop.jpg">
-
-                <!-- Imagem para telas pequenas (mobile) -->
-                <img
-                    src="imagens/hero-mobile.jpg"
-                    alt="Vista da estação e do bairro do Capão Redondo, zona sul de São Paulo."
-                    class="hero-img"
-                    width="1200"
-                    height="600">
+        
+            <picture class="hero-picture">
+                <!-- Imagem para telas grandes -->
+                <source media="(min-width: 768px)" srcset="imagens/hero-desktop.jpg">
+        
+                <!-- Imagem padrão para telas pequenas -->
+                <img src="imagens/hero-mobile.jpg" alt="Vista da estação e do bairro do Capão Redondo, zona sul de São Paulo."
+                    class="hero-img" width="1200" height="600">
             </picture>
-
+        
             <div class="hero-cta">
                 <h1>Faça parte do crescimento do Capão Redondo</h1>
-                <p>Junte-se à Câmara de Comércio e impulsione o seu negócio local.</p>
-                <a href="associe-se.html" class="botao-primario">Associe-se à Câmara</a>
+        
+                <p>
+                    Junte-se à Câmara de Comércio e impulsione o seu negócio local.
+                </p>
+        
+                <a href="associe-se.html" class="botao-primario">
+                    Associe-se à Câmara
+                </a>
             </div>
+        
         </section>
-
         <div class="layout-grid-inicio">
             <!-- Coluna Esquerda: Eventos e Clima -->
             <div class="coluna-info">
