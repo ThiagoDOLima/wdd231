@@ -1,19 +1,29 @@
-/* Telas Pequenas*/
+/* =========================================
+   TELAS PEQUENAS - CÂMARA DE COMÉRCIO
+   ========================================= */
+
+/* 1. VARIÁVEIS E CONFIGURAÇÕES GERAIS */
 
 :root {
     --cor-primaria: #17324D;
-    /* Azul-marinho */
     --cor-secundaria-clara: #FFD700;
-    /* Dourado Brilhante (para fundos escuros - Contraste 9.5:1) */
     --cor-secundaria-escura: #7A5200;
-    /* Dourado Escuro (para fundos claros - Contraste 5.2:1) */
     --cor-fundo: #F4F6F8;
     --cor-texto: #111827;
-    /* Texto quase preto (alto contraste) */
     --cor-card-bg: #FFFFFF;
     --cor-borda: #D0D7DE;
     --fonte-principal: 'Roboto', sans-serif;
     --fonte-titulos: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 0;
 }
 
 body {
@@ -22,6 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
     font-family: var(--fonte-principal);
 }
 
@@ -34,7 +45,15 @@ h6 {
     font-family: var(--fonte-titulos);
 }
 
-/* Header & Navegação */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================================
+   2. CABEÇALHO E NAVEGAÇÃO
+   ========================================= */
+
 header {
     background-color: var(--cor-primaria);
     color: #ffffff;
@@ -49,6 +68,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -57,6 +77,7 @@ header {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    min-width: 0;
     color: #ffffff;
     text-decoration: none;
 }
@@ -70,6 +91,10 @@ header {
     border-radius: 4px;
 }
 
+.marca-texto {
+    min-width: 0;
+}
+
 .marca-texto strong {
     display: block;
     font-size: 1.1rem;
@@ -77,7 +102,6 @@ header {
 
 .marca-texto small {
     color: #E2E8F0;
-    /* Ajustado para alto contraste sobre o azul */
     font-size: 0.85rem;
 }
 
@@ -114,20 +138,23 @@ nav#menu-principal a {
     font-weight: 500;
 }
 
-/* Link ativo do Menu agora com contraste de 9.5:1 */
 nav#menu-principal a.ativo,
 nav#menu-principal a:hover {
-    background-color: #FFD700;
-    color: #17324D;
+    background-color: var(--cor-secundaria-clara);
+    color: var(--cor-primaria);
     font-weight: 700;
     border-radius: 4px;
 }
 
-/* Conteúdo Main */
+/* =========================================
+   3. CONTEÚDO PRINCIPAL
+   ========================================= */
+
 main {
     flex: 1;
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
+    min-width: 0;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -141,10 +168,8 @@ main {
     border-left: 6px solid var(--cor-secundaria-clara);
 }
 
-/* CORRIGIDO: Subtítulos com cores condicionais ao fundo */
 .subtitulo {
     color: var(--cor-secundaria-escura);
-    /* Dourado Escuro no fundo claro (Contraste 5.2:1 - APROVADO) */
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -153,11 +178,10 @@ main {
 
 .destaque .subtitulo {
     color: var(--cor-secundaria-clara);
-    /* Dourado Brilhante no fundo escuro (Contraste 9.5:1 - APROVADO) */
 }
 
 .destaque h1 {
-    margin: 0.5rem 0 1rem 0;
+    margin: 0.5rem 0 1rem;
     font-size: 1.6rem;
 }
 
@@ -180,177 +204,56 @@ main {
     border: 1px solid var(--cor-borda);
 }
 
-/* Diretório e Controles */
-.titulo-diretorio {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.controles {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.controles button {
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--cor-primaria);
-    background-color: #ffffff;
-    color: var(--cor-primaria);
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.controles button.selecionado {
-    background-color: var(--cor-primaria);
-    color: #ffffff;
-}
-
-/* Cartões */
-.grade-empresas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-.cartao-membro {
-    background-color: var(--cor-card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--cor-borda);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-}
-
-.cartao-membro.nivel-3 {
-    border-top: 4px solid var(--cor-secundaria-escura);
-}
-
-.cartao-imagem {
-    position: relative;
-}
-
-.badge-nivel {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria-clara);
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.cartao-corpo {
-    padding: 1.25rem;
-}
-
-.cartao-corpo h3 {
-    margin: 0 0 0.5rem 0;
-    color: var(--cor-primaria);
-}
-
-.cartao-corpo .descricao {
-    font-size: 0.95rem;
-    color: #333333;
-    margin-bottom: 1rem;
-}
-
-.link-site {
-    display: inline-block;
-    margin-top: 0.75rem;
-    color: #0F4C81;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* Lista */
-.lista-empresas {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.item-membro-lista {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 6px;
-    border: 1px solid var(--cor-borda);
-}
-
-.item-membro-lista h3 {
-    margin: 0 0 0.25rem 0;
-    color: var(--cor-primaria);
-}
-
-/* Rodapé */
-footer {
-    background-color: var(--cor-primaria);
-    color: #ffffff;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-}
-
-.rodape-conteudo {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
 /* =========================================
-   ESTILOS DA PÁGINA INICIAL (MOBILE)
+   4. PÁGINA INICIAL - HERO
    ========================================= */
 
-/* Hero Image com Tag IMG (Conforme requisito) */
 .hero-container {
     position: relative;
+    width: 100%;
     margin-bottom: 2rem;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.hero-picture {
+    display: block;
+    width: 100%;
+}
+
 .hero-img {
+    display: block;
     width: 100%;
     height: 350px;
     object-fit: cover;
-    display: block;
 }
 
-/* Caixa de CTA (Call to Action) por cima da imagem */
 .hero-cta {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(23, 50, 77, 0.9);
-    /* Azul marinho com opacidade */
-    color: #fff;
+    color: #ffffff;
     padding: 1.5rem;
     text-align: center;
     width: 90%;
     border-radius: 8px;
-    border: 2px solid #FFD700;
+    border: 2px solid var(--cor-secundaria-clara);
 }
 
 .hero-cta h1 {
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #FFD700;
+    color: var(--cor-secundaria-clara);
 }
 
 .botao-primario {
     display: inline-block;
-    background-color: #FFD700;
-    color: #17324D;
+    background-color: var(--cor-secundaria-clara);
+    color: var(--cor-primaria);
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
@@ -360,7 +263,10 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Layout dos Painéis */
+/* =========================================
+   5. PAINÉIS DA PÁGINA INICIAL
+   ========================================= */
+
 .layout-grid-inicio {
     display: flex;
     flex-direction: column;
@@ -368,7 +274,7 @@ footer {
 }
 
 .painel {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid var(--cor-borda);
@@ -383,6 +289,7 @@ footer {
 }
 
 /* Clima */
+
 .clima-hoje {
     display: flex;
     align-items: center;
@@ -417,7 +324,8 @@ footer {
     border-bottom: 1px dashed var(--cor-borda);
 }
 
-/* Destaques (Ouro/Prata) */
+/* Empresas em destaque */
+
 .grade-destaques {
     display: flex;
     flex-direction: column;
@@ -446,8 +354,8 @@ footer {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #FFD700;
-    color: #17324D;
+    background-color: var(--cor-secundaria-clara);
+    color: var(--cor-primaria);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -470,79 +378,14 @@ footer {
     color: #0F4C81;
     font-weight: bold;
 }
-/* Ajustes de responsividade e alinhamento */
-
-.cabecalho {
-    gap: 1rem;
-}
-
-.marca {
-    min-width: 0;
-}
-
-.marca-texto {
-    min-width: 0;
-}
-
-main,
-.diretorio,
-.titulo-diretorio,
-#lista-empresas {
-    min-width: 0;
-}
-
-.controles {
-    flex-wrap: wrap;
-}
-
-.grade-empresas {
-    grid-template-columns: minmax(0, 1fr);
-}
-
-.cartao-membro {
-    min-width: 0;
-}
-
-.cartao-corpo {
-    overflow-wrap: anywhere;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Evita rolagem horizontal */
-html,
-body {
-    width: 100%;
-    min-width: 0;
-}
 
 /* =========================================
-   DIRETÓRIO DE EMPRESAS - AJUSTES RESPONSIVOS
+   6. DIRETÓRIO DE EMPRESAS
    ========================================= */
-
-/* Evita que elementos ultrapassem a largura da tela */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    min-width: 0px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Organização do diretório */
 
 .diretorio {
     width: 100%;
+    min-width: 0;
     margin: 0 auto;
 }
 
@@ -569,27 +412,50 @@ img {
 .controles button {
     min-height: 44px;
     padding: 0.65rem 1.2rem;
+    border: 2px solid var(--cor-primaria);
+    background-color: #ffffff;
+    color: var(--cor-primaria);
+    border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.controles button.selecionado {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
 }
 
 /* Grade de empresas */
 
 .grade-empresas {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.25rem;
     width: 100%;
+    min-width: 0;
 }
 
 /* Cartões */
 
 .cartao-membro {
-    min-width: 0;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    min-width: 0;
+    background-color: var(--cor-card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     overflow-wrap: break-word;
 }
 
+.cartao-membro.nivel-3 {
+    border-top: 4px solid var(--cor-secundaria-escura);
+}
+
 .cartao-imagem {
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
@@ -602,13 +468,26 @@ img {
     padding: 1rem;
 }
 
-/* Conteúdo dos cartões */
+.badge-nivel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria-clara);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
 
 .cartao-corpo {
     padding: 1rem;
+    overflow-wrap: anywhere;
 }
 
 .cartao-corpo h3 {
+    margin: 0 0 0.5rem;
+    color: var(--cor-primaria);
     overflow-wrap: anywhere;
 }
 
@@ -617,25 +496,67 @@ img {
     overflow-wrap: anywhere;
 }
 
-/* Visualização em lista */
+.cartao-corpo .descricao {
+    font-size: 0.95rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.link-site {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #0F4C81;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* =========================================
+   7. VISUALIZAÇÃO EM LISTA
+   ========================================= */
 
 .lista-empresas {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    min-width: 0;
 }
 
 .item-membro-lista {
-    min-width: 0;
     width: 100%;
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--cor-borda);
     overflow-wrap: anywhere;
 }
 
 .item-membro-lista h3 {
-    margin-top: 0;
+    margin: 0 0 0.25rem;
+    color: var(--cor-primaria);
 }
 
 .item-membro-lista p {
     line-height: 1.5;
+}
+
+/* =========================================
+   8. RODAPÉ
+   ========================================= */
+
+footer {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }

@@ -1,7 +1,41 @@
-/* (Desktop e Tablets) */ 
+/* =========================================
+   TELAS GRANDES - DESKTOP E TABLETS
+   ========================================= */
 
 @media (min-width: 768px) {
-/* Organização do diretório em telas grandes */
+
+    /* =====================================
+       1. NAVEGAÇÃO
+       ===================================== */
+
+    #botao-menu {
+        display: none;
+    }
+
+    nav#menu-principal {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: none;
+        border-top: none;
+    }
+
+    nav#menu-principal a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    nav#menu-principal a.ativo,
+    nav#menu-principal a:hover {
+        background-color: var(--cor-secundaria-clara);
+        color: var(--cor-primaria);
+    }
+
+    /* =====================================
+       2. DIRETÓRIO DE EMPRESAS
+       ===================================== */
 
     .diretorio {
         width: 100%;
@@ -14,14 +48,12 @@
         gap: 2rem;
     }
 
-    /* Grade responsiva de empresas */
-
     .grade-empresas {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.5rem;
     }
 
-    /* Padronização dos cartões */
+    /* Cartões */
 
     .cartao-membro {
         display: flex;
@@ -41,7 +73,7 @@
         align-self: flex-start;
     }
 
-    /* Organização da visualização em lista */
+    /* Visualização em lista */
 
     .lista-empresas .item-membro-lista {
         display: grid;
@@ -49,57 +81,29 @@
         align-items: center;
         gap: 1rem;
     }
-    #botao-menu {
-        display: none;
-    }
 
-    nav#menu-principal {
-        display: flex !important;
-        position: static;
-        flex-direction: row;
-        width: auto;
-        background: none;
-        border-top: none;
-    }
-
-    nav#menu-principal a {
-        border-bottom: none;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-
-    /* Mantém o destaque com cores sólidas em telas grandes */
-    nav#menu-principal a.ativo,
-    nav#menu-principal a:hover {
-        background-color: #FFD700;
-        color: #17324D;
-    }
-
-    .titulo-diretorio {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .grade-empresas {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .lista-empresas .item-membro-lista {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    /* =====================================
+       3. RODAPÉ
+       ===================================== */
 
     .rodape-conteudo {
         flex-direction: row;
         justify-content: space-between;
     }
 
-  /* =========================================
-     ESTILOS DA PÁGINA INICIAL (DESKTOP)
-     ========================================= */
-        /* HERO - Desktop */
+    /* =====================================
+       4. PÁGINA INICIAL - HERO
+       ===================================== */
+
+    .hero-container {
+        min-height: 450px;
+    }
+
+    .hero-picture {
+        width: 100%;
+        height: 450px;
+    }
+
     .hero-img {
         width: 100%;
         height: 100%;
@@ -107,36 +111,31 @@
     }
 
     .hero-cta {
-      width: auto;
-      min-width: 500px;
-      padding: 2.5rem;
-      color: #ffffff;
+        width: auto;
+        min-width: 500px;
+        max-width: 90%;
+        padding: 2.5rem;
+        color: #ffffff;
     }
 
     .hero-cta h1 {
-      font-size: 2.2rem;
-      color: #ffffff;
+        font-size: 2.2rem;
+        color: #ffffff;
     }
 
+    /* =====================================
+       5. PAINÉIS DA PÁGINA INICIAL
+       ===================================== */
+
     .layout-grid-inicio {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      /* Coluna esquerda (1 parte), Coluna direita (2 partes) */
-      align-items: start;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
     }
 
     .grade-destaques {
-      flex-direction: row;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-        
-    .hero-container {
-        min-height: 450px;
-    }
-        
-    .hero-picture {
-        width: 100%;
-        height: 450px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        flex-direction: row;
     }
 }
