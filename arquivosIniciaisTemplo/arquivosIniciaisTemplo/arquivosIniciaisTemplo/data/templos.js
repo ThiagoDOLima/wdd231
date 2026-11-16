@@ -1,7 +1,9 @@
 //https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/
 //https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng
 
-templos = [
+
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/"
+export const templos = [
     {
         "numero": "1",
         "nome": "Templo de St. George Utah",
