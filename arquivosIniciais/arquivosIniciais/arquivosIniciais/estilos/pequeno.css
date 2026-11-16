@@ -1,3 +1,23 @@
 * {
   box-sizing: border-box;
 }
+
+/* */
+
+#btnAbrir {
+  background-color: aqua;
+}
+
+#caixaDiaglogo {
+
+  background-color: lavender;
+}
+
+#btnFechar {
+  background-color: violet;
+}
+
+/* Cor por traz do fundo*/
+::backdrop {
+  background-color: rgba(255,128,0,0.5);
+}

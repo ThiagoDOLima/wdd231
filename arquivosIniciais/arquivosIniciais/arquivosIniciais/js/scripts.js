@@ -5,3 +5,7 @@ const btnFechar = document.querySelector("#btnFechar");
 btnAbrir.addEventListener("click", () => {
     caixaDialogo.showModal();
 });
+
+btnFechar.addEventListener("click", () => {
+    caixaDialogo.close();
+});
