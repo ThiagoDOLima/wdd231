@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arquivo inicial do Web Lababóritorio">
+  <meta name="author" content="Paul Cheney">
+
+  <link rel="stylesheet" href="estilos/pequeno.css">
+  <link rel="stylesheet" href="estilos/grande.css">
+
+  <title>Arquivo inicial do Web Laboratório</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Agendamento de Templo</h1>
+
+    <form method="GET" action="obrigado.html" class="designUm">
+        <label>Primeiro Nome <input type="text" name="primeiro" required autocomplete="given-name" title="Seu Primeiro Nome"></label>
+        <label>Sobrenome <input type="text" name="sobrenome" required autocomplete="family-name" title="Seu Sobrenome"></label>
+        <label>Numero de Celular <input type="tel" name="celular" autocomplete="tel" title="Um Número de Telefone com traços" placeholder="55-71-1111-1234" ></label>
+        <label>Email <input type="email" name="email" required placeholder="joao89@gmail.com"  title="Seu Email" autocomplete="email"></label>
+  
+
+        <h3>Escolha uma Ordenança</h3>
+        <label><input type="radio" name="ordenancas" value="Batismo" checked>Batismo vicário</label>
+        <label><input type="radio" name="ordenancas" value="Iniciatória">Iniciatória vicária</label>
+        <label><input type="radio" name="ordenancas" value="Investidura">Investidura vicária</label>
+        <label><input type="radio" name="ordenancas" value="Sealamento">Sealamento vicário</label>
+
+        
+        <h3>Data e Local</h3>
+        <label>Data <input type="date" name="data" required></label>
+
+        <label>Local
+          <select name="local" required>
+            <option value="">Nenhum</option>
+            <option value="Payson">Payson</option>
+            <option value="Orem">Orem</option>
+            <option value="Centro da Cidade do Provo ">Centro da Cidade do Provo</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Agendar">
+    </form>
+
+    
+  </main>
+
+</body>
+</html>
