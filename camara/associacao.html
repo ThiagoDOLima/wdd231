@@ -6,39 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Conheça as empresas participantes da Câmara de Comércio do Capão Redondo, em São Paulo.">
+        content="Peça sua associação à Câmara de Comércio do Capão Redondo e escolha o nível ideal para sua empresa.">
     <meta name="author" content="Thiago de Oliveira Lima">
 
-    <meta property="og:title" content="Câmara de Comércio do Capão Redondo">
-    <meta property="og:description" content="Fortalecendo o comércio local e construindo oportunidades.">
-    <meta property="og:type" content="website">
+    <title>Associe-se | Câmara de Comércio do Capão Redondo</title>
 
-    <title>Diretório de Empresas | Câmara de Comércio do Capão Redondo</title>
-
-    <!-- Open Graph ok- Facebook e redes sociais -->
+    <!-- Open Graph - Facebook e redes sociais -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Diretório de Empresas | Câmara de Comércio do Capão Redondo">
+    <meta property="og:title" content="Associe-se | Câmara de Comércio do Capão Redondo">
     <meta property="og:description"
-        content="Conheça as empresas participantes da Câmara de Comércio do Capão Redondo, em São Paulo.">
-    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/diretorio.html">
+        content="Peça sua associação à Câmara de Comércio do Capão Redondo e escolha o nível ideal para sua empresa.">
+    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/associacao.html">
     <meta property="og:image" content="https://thiagodolima.github.io/wdd231/camara/imagens/hero-desktop.jpg">
     <meta property="og:image:alt" content="Vista do bairro do Capão Redondo, São Paulo.">
 
-    <!-- GOOGLE FONTS (Preconnect + Stylesheet obrigatórios) -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-
     <!-- ARQUIVOS CSS LOCAIS -->
     <link rel="icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
+    
 
-    <script src="scripts/diretorio.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
 </head>
 
 <body>
@@ -58,9 +54,9 @@
             </button>
 
             <nav id="menu-principal" aria-label="Menu principal">
-                <a href="index.html" aria-current="page">Página Inicial</a> <!-- Ajuda na navegação onde está -->
-                <a href="diretorio.html" class="ativo" aria-current="page">Diretório</a>
-                <a href="associacao.html">Associe-se</a>
+                <a href="index.html">Página Inicial</a>
+                <a href="diretorio.html">Diretório</a>
+                <a href="associacao.html" class="ativo" aria-current="page">Associe-se</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="eventos.html">Eventos</a>
                 <a href="podcast.html">Podcast</a>
@@ -68,9 +64,133 @@
         </div>
     </header>
 
-    <main>
-       <p>Associe-se</p>
+    <main class="pagina-associacao">
+        <section class="bloco-formulario">
+            <h1>Pedido de associação</h1>
+            <p>Os campos marcados com * são obrigatórios.</p>
+
+            <form action="agradecimento.html" method="get">
+                <label>Nome *
+                    <input type="text" name="nome" id="nome" title="Digite seu nome"
+                        autocomplete="given-name" required>
+                </label>
+
+                <label>Sobrenome *
+                    <input type="text" name="sobrenome" id="sobrenome" title="Digite seu sobrenome"
+                        autocomplete="family-name" required>
+                </label>
+
+                <label>Cargo na organização
+                    <input type="text" name="cargo" id="cargo"
+                        title="Somente letras, hífens e espaços, com pelo menos 7 caracteres"
+                        autocomplete="cargo-na-organizacao" pattern="[A-Za-zÀ-ÿ \-]{7,}">
+                </label>
+
+                <label>E-mail *
+                    <input type="email" name="email" id="email" title="Digite seu endereço de e-mail"
+                        autocomplete="email" placeholder="nome@empresa.com.br" required>
+                </label>
+
+                <label>Celular *
+                    <input type="tel" name="celular" id="celular" title="Digite seu número de celular"
+                        autocomplete="tel" required>
+                </label>
+
+                <label>Empresa/organização *
+                    <input type="text" name="organizacao" id="organizacao"
+                        title="Digite o nome da empresa ou organização" autocomplete="organizacao" required>
+                </label>
+
+                <label>Nível de associação *
+                    <select name="nivel" id="nivel" title="Escolha o nível de associação" required>
+                        <option value="" disabled selected>Selecione um nível</option>
+                        <option value="np">Associação NP (sem fins lucrativos, sem taxa)</option>
+                        <option value="bronze">Associação Bronze</option>
+                        <option value="silver">Associação Prata</option>
+                        <option value="gold">Associação Ouro</option>
+                    </select>
+                </label>
+
+                <label>Descrição da atividade/organização
+                    <textarea name="atividade" id="atividade" rows="4"
+                        title="Descreva a atividade da sua organização"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Enviar pedido</button>
+            </form>
+        </section>
+
+        <section class="bloco-niveis" aria-labelledby="titulo-niveis">
+            <h2 id="titulo-niveis">Níveis de associação</h2>
+            <div class="cartoes">
+                <article class="cartao np">
+                    <h3>Associação NP</h3>
+                    <p>Para organizações sem fins lucrativos.</p>
+                    <a href="#" data-modal="modal-np">Ver benefícios</a>
+                </article>
+                <article class="cartao bronze">
+                    <h3>Associação Bronze</h3>
+                    <p>O primeiro passo na rede da câmara.</p>
+                    <a href="#" data-modal="modal-bronze">Ver benefícios</a>
+                </article>
+                <article class="cartao silver">
+                    <h3>Associação Prata</h3>
+                    <p>Mais visibilidade e formação.</p>
+                    <a href="#" data-modal="modal-silver">Ver benefícios</a>
+                </article>
+                <article class="cartao gold">
+                    <h3>Associação Ouro</h3>
+                    <p>Destaque máximo e todos os benefícios.</p>
+                    <a href="#" data-modal="modal-gold">Ver benefícios</a>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <dialog id="modal-np" aria-labelledby="titulo-np">
+        <h2 id="titulo-np">Associação NP</h2>
+        <p>Sem taxa, para organizações sem fins lucrativos.</p>
+        <ul>
+            <li>Listagem no diretório de empresas</li>
+            <li>Convites para eventos abertos da câmara</li>
+            <li>Boletim mensal por e-mail</li>
+        </ul>
+        <button type="button" class="fechar">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-bronze" aria-labelledby="titulo-bronze">
+        <h2 id="titulo-bronze">Associação Bronze</h2>
+        <ul>
+            <li>Tudo da Associação NP</li>
+            <li>Desconto em eventos de networking</li>
+            <li>Acesso a treinamentos básicos</li>
+        </ul>
+        <button type="button" class="fechar">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-silver" aria-labelledby="titulo-silver">
+        <h2 id="titulo-silver">Associação Prata</h2>
+        <ul>
+            <li>Tudo da Associação Bronze</li>
+            <li>Treinamentos avançados com desconto maior</li>
+            <li>Anúncio rotativo na página inicial</li>
+            <li>Convite para eventos especiais</li>
+        </ul>
+        <button type="button" class="fechar">Fechar</button>
+    </dialog>
+
+    <dialog id="modal-gold" aria-labelledby="titulo-gold">
+        <h2 id="titulo-gold">Associação Ouro</h2>
+        <ul>
+            <li>Tudo da Associação Prata</li>
+            <li>Posição de destaque fixa na página inicial</li>
+            <li>Treinamentos e eventos gratuitos</li>
+            <li>Espaço de patrocínio em eventos da câmara</li>
+        </ul>
+        <button type="button" class="fechar">Fechar</button>
+    </dialog>
 
     <footer>
         <div class="rodape-conteudo">

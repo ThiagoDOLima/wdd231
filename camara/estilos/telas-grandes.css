@@ -138,4 +138,18 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         flex-direction: row;
     }
+    
+    /* Telas grandes: página Associe-se */
+    .pagina-associacao {
+        display: grid;
+        grid-template-columns: 1fr 22rem;
+        gap: 2rem;
+        align-items: start;
+        
+    }
+    
+    .bloco-niveis {
+        margin-top: 0;
+    
+    }
 }
