@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça as empresas participantes da Câmara de Comércio do Capão Redondo, em São Paulo.">
+    <meta name="author" content="Thiago de Oliveira Lima">
+
+    <meta property="og:title" content="Câmara de Comércio do Capão Redondo">
+    <meta property="og:description" content="Fortalecendo o comércio local e construindo oportunidades.">
+    <meta property="og:type" content="website">
+
+    <title>Diretório de Empresas | Câmara de Comércio do Capão Redondo</title>
+
+    <!-- Open Graph ok- Facebook e redes sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diretório de Empresas | Câmara de Comércio do Capão Redondo">
+    <meta property="og:description"
+        content="Conheça as empresas participantes da Câmara de Comércio do Capão Redondo, em São Paulo.">
+    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:image" content="https://thiagodolima.github.io/wdd231/camara/imagens/hero-desktop.jpg">
+    <meta property="og:image:alt" content="Vista do bairro do Capão Redondo, São Paulo.">
+
+    <!-- GOOGLE FONTS (Preconnect + Stylesheet obrigatórios) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ARQUIVOS CSS LOCAIS -->
+    <link rel="icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a class="marca" href="index.html">
+                <span class="marca-simbolo">CC</span>
+                <span class="marca-texto">
+                    <strong>Câmara de Comércio</strong>
+                    <small>Capão Redondo</small>
+                </span>
+            </a>
+
+            <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-principal">
+                ☰
+            </button>
+
+            <nav id="menu-principal" aria-label="Menu principal">
+                <a href="index.html" aria-current="page">Página Inicial</a> <!-- Ajuda na navegação onde está -->
+                <a href="diretorio.html" class="ativo" aria-current="page">Diretório</a>
+                <a href="associacao.html">Associe-se</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="podcast.html">Podcast</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       <p>Associe-se</p>
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div>
+                <strong>Câmara de Comércio do Capão Redondo</strong>
+                <p>Capão Redondo — São Paulo, SP</p>
+                <p>Projeto acadêmico WDD 231</p>
+            </div>
+
+            <div>
+                <p>Desenvolvido por Thiago de Oliveira Lima</p>
+                <p>BYU - Desenvolvimento de Software</p>
+                <p>© <span id="ano-atual"></span> Câmara de Comércio</p>
+                <p>Última atualização: <span id="ultima-atualizacao"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
