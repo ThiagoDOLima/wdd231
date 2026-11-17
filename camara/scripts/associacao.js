@@ -13,6 +13,9 @@ botaoMenu.addEventListener("click", () => {
 // Data e hora em que o formulário foi carregado
 document.querySelector("#timestamp").value = new Date().toISOString();
 
+// Nenhum nível vem marcado: o usuário precisa escolher (o campo é obrigatório)
+document.querySelector("#nivel").selectedIndex = -1;
+
 // Modais dos níveis de associação
 document.querySelectorAll("[data-modal]").forEach((link) => {
     link.addEventListener("click", (evento) => {
