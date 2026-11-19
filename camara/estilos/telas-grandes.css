@@ -153,3 +153,75 @@
     
     }
 }
+
+/* 19/11/2026*/
+
+/* ==========================================
+   PÁGINA SOBRE - TELAS MÉDIAS
+   641px até 1024px
+========================================== */
+
+@media screen and (min-width: 641px) {
+
+    .sobre-introducao {
+        padding: 3rem 2rem;
+    }
+
+    .dados-cartoes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grade-atracoes {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "atracao1 atracao2"
+            "atracao3 atracao4"
+            "atracao5 atracao6"
+            "atracao7 atracao8";
+    }
+}
+
+/* ==========================================
+   PÁGINA SOBRE - TELAS GRANDES
+   1025px ou mais
+========================================== */
+
+@media screen and (min-width: 1025px) {
+
+    .sobre-introducao {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+
+    .sobre-destaque {
+        margin-top: 0;
+    }
+
+    .grade-atracoes {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "atracao1 atracao2 atracao3 atracao4"
+            "atracao5 atracao6 atracao7 atracao8";
+    }
+
+    /* Efeito nas imagens somente em telas maiores */
+    .cartao-atracao img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .cartao-atracao:hover img {
+        transform: scale(1.04);
+        filter: brightness(1.1);
+    }
+
+    .cartao-atracao {
+        overflow: hidden;
+    }
+}

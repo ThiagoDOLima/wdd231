@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça o Capão Redondo, sua população, cultura, espaços de lazer e oportunidades de desenvolvimento econômico.">
+
+    <meta name="author" content="Thiago de Oliveira Lima">
+
+    <!-- Imagem de compartilhamento -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sobre | Câmara de Comércio do Capão Redondo">
+    <meta property="og:description" content="Descubra os espaços, a cultura e as oportunidades do Capão Redondo.">
+    <meta property="og:url" content="https://thiagodolima.github.io/wdd231/camara/sobre.html">
+    <meta property="og:image" content="https://thiagodolima.github.io/wdd231/camara/imagens/hero-desktop.jpg">
+
+    <link rel="canonical" href="https://thiagodolima.github.io/wdd231/camara/sobre.html">
+
+    <title>Sobre | Câmara de Comércio do Capão Redondo</title>
+
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <!-- Script da página Sobre -->
+    <script src="scripts/sobre.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+
+            <a class="marca" href="index.html">
+                <span class="marca-simbolo">CC</span>
+                <span class="marca-texto">
+                    <strong>Câmara de Comércio</strong>
+                    <small>Capão Redondo</small>
+                </span>
+            </a>
+
+            <button id="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-principal">
+                ☰
+            </button>
+
+            <nav id="menu-principal" aria-label="Menu principal">
+                <a href="index.html">Página Inicial</a>
+                <a href="diretorio.html">Diretório</a>
+                <a href="associacao.html">Associe-se</a>
+                <a href="sobre.html" class="ativo" aria-current="page">Sobre</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="podcast.html">Podcast</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Apresentação da região -->
+        <section class="sobre-introducao">
+
+            <div class="sobre-conteudo">
+                <h1>Conheça o Capão Redondo</h1>
+
+                <p>
+                    O Capão Redondo é um distrito localizado na zona sul
+                    de São Paulo, conhecido por sua diversidade cultural,
+                    força comunitária e espírito empreendedor.
+                </p>
+
+                <p>
+                    A região reúne comerciantes, prestadores de serviços,
+                    empreendedores, espaços culturais e iniciativas
+                    sociais que contribuem para o desenvolvimento local.
+                </p>
+
+                <p>
+                    A Câmara de Comércio busca fortalecer essas conexões,
+                    incentivar oportunidades e valorizar os negócios
+                    existentes na comunidade.
+                </p>
+            </div>
+
+            <div class="sobre-destaque">
+                <h2>Uma região de oportunidades</h2>
+                <p>
+                    Comércio, cultura, educação e desenvolvimento
+                    fazem parte da identidade do Capão Redondo.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Informações demográficas -->
+        <section class="dados-regiao">
+
+            <h2>Capão Redondo em números</h2>
+
+            <p>
+                Conhecer as características da população é importante
+                para compreender o potencial econômico e social da região.
+            </p>
+
+            <div class="dados-cartoes">
+
+                <article class="dado-card">
+                    <h3>270.767</h3>
+                    <p>Habitantes</p>
+                    <small>Censo IBGE 2022</small>
+                </article>
+
+                <article class="dado-card">
+                    <h3>Zona Sul</h3>
+                    <p>Localização</p>
+                    <small>São Paulo - SP</small>
+                </article>
+
+                <article class="dado-card">
+                    <h3>Diversidade</h3>
+                    <p>Cultura e empreendedorismo</p>
+                    <small>Identidade local</small>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Mensagem da última visita -->
+        <section class="mensagem-visita">
+            <p id="mensagem-visitante" aria-live="polite">
+                Bem-vindo à Câmara de Comércio do Capão Redondo!
+            </p>
+        </section>
+
+        <!-- Pontos de interesse -->
+        <section class="pontos-interesse">
+
+            <h2>Conheça nossa região</h2>
+
+            <p class="interesse-introducao">
+                Descubra alguns dos espaços que fazem parte da
+                identidade, da cultura e da vida comunitária
+                do Capão Redondo.
+            </p>
+
+            <div id="lista-atracoes" class="grade-atracoes">
+                <!-- Os oito cartões serão inseridos pelo JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape-conteudo">
+
+            <div>
+                <strong>Câmara de Comércio do Capão Redondo</strong>
+                <p>Capão Redondo — São Paulo, SP</p>
+                <p>Projeto acadêmico WDD 231</p>
+            </div>
+
+            <div>
+                <p>Desenvolvido por Thiago de Oliveira Lima</p>
+                <p>BYU - Desenvolvimento de Software</p>
+                <p>© <span id="ano-atual"></span> Câmara de Comércio</p>
+                <p>Última atualização: <span id="ultima-atualizacao"></span></p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -722,3 +722,358 @@ dialog::backdrop {
         animation: none;
     }
 }
+
+
+/* ==========================================
+   PÁGINA SOBRE - ESTILOS GERAIS
+========================================== */
+
+.sobre-introducao {
+    padding: 2rem 1rem;
+    background-color: #F4F6F8;
+}
+
+.sobre-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobre-introducao h1,
+.dados-regiao h2,
+.pontos-interesse h2 {
+    color: #17324D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sobre-introducao p,
+.dados-regiao p,
+.interesse-introducao {
+    line-height: 1.7;
+}
+
+.sobre-destaque {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #17324D;
+    color: white;
+    border-radius: 8px;
+}
+
+.sobre-destaque h2 {
+    color: #FFD700;
+}
+
+.dados-regiao,
+.pontos-interesse {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.dados-cartoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+}
+
+.dado-card {
+    padding: 1.5rem;
+    background-color: #F4F6F8;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.dado-card h3 {
+    color: #17324D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+}
+
+.mensagem-visita {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #17324D;
+    color: white;
+    border-left: 5px solid #FFD700;
+    border-radius: 6px;
+}
+
+.mensagem-visita p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ==========================================
+   CARTÕES DE INTERESSE
+========================================== */
+
+.grade-atracoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+
+    grid-template-areas:
+        "atracao1"
+        "atracao2"
+        "atracao3"
+        "atracao4"
+        "atracao5"
+        "atracao6"
+        "atracao7"
+        "atracao8";
+}
+
+.area-1 { grid-area: atracao1; }
+.area-2 { grid-area: atracao2; }
+.area-3 { grid-area: atracao3; }
+.area-4 { grid-area: atracao4; }
+.area-5 { grid-area: atracao5; }
+.area-6 { grid-area: atracao6; }
+.area-7 { grid-area: atracao7; }
+.area-8 { grid-area: atracao8; }
+
+.cartao-atracao {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.cartao-atracao h2 {
+    font-size: 1.2rem;
+    color: #17324D;
+}
+
+.cartao-atracao figure {
+    margin: 1rem 0;
+}
+
+.cartao-atracao img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cartao-atracao address {
+    margin: 0.8rem 0;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.cartao-atracao p {
+    line-height: 1.6;
+}
+
+.botao-saiba-mais {
+    padding: 0.7rem 1.2rem;
+    background-color: #17324D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.botao-saiba-mais:hover {
+    background-color: #7A5200;
+    color: white;
+}
+
+/* 19/11/2026 */
+
+/* ==========================================
+   PÁGINA SOBRE - ESTILOS GERAIS
+========================================== */
+
+.sobre-introducao {
+    padding: 2rem 1rem;
+    background-color: #F4F6F8;
+}
+
+.sobre-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobre-introducao h1,
+.dados-regiao h2,
+.pontos-interesse h2 {
+    color: #17324D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sobre-introducao p,
+.dados-regiao p,
+.interesse-introducao {
+    line-height: 1.7;
+}
+
+.sobre-destaque {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #17324D;
+    color: white;
+    border-radius: 8px;
+}
+
+.sobre-destaque h2 {
+    color: #FFD700;
+}
+
+.dados-regiao,
+.pontos-interesse {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.dados-cartoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+}
+
+.dado-card {
+    padding: 1.5rem;
+    background-color: #F4F6F8;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.dado-card h3 {
+    color: #17324D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+}
+
+.mensagem-visita {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #17324D;
+    color: white;
+    border-left: 5px solid #FFD700;
+    border-radius: 6px;
+}
+
+.mensagem-visita p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ==========================================
+   CARTÕES DE INTERESSE
+========================================== */
+
+.grade-atracoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+
+    grid-template-areas:
+        "atracao1"
+        "atracao2"
+        "atracao3"
+        "atracao4"
+        "atracao5"
+        "atracao6"
+        "atracao7"
+        "atracao8";
+}
+
+.area-1 {
+    grid-area: atracao1;
+}
+
+.area-2 {
+    grid-area: atracao2;
+}
+
+.area-3 {
+    grid-area: atracao3;
+}
+
+.area-4 {
+    grid-area: atracao4;
+}
+
+.area-5 {
+    grid-area: atracao5;
+}
+
+.area-6 {
+    grid-area: atracao6;
+}
+
+.area-7 {
+    grid-area: atracao7;
+}
+
+.area-8 {
+    grid-area: atracao8;
+}
+
+.cartao-atracao {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.cartao-atracao h2 {
+    font-size: 1.2rem;
+    color: #17324D;
+}
+
+.cartao-atracao figure {
+    margin: 1rem 0;
+}
+
+.cartao-atracao img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cartao-atracao address {
+    margin: 0.8rem 0;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.cartao-atracao p {
+    line-height: 1.6;
+}
+
+.botao-saiba-mais {
+    padding: 0.7rem 1.2rem;
+    background-color: #17324D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.botao-saiba-mais:hover {
+    background-color: #7A5200;
+    color: white;
+}
+
