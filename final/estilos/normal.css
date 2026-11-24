@@ -1,0 +1,50 @@
+:root {
+    --cor-grafite: #2B2D31;
+    --cor-amarelo: #F2B705;
+    --cor-fundo: #F7F7F5;
+    --cor-texto: #222222;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Oswald", Arial, sans-serif;
+    color: var(--cor-grafite);
+}
+
+header,
+footer {
+    background-color: var(--cor-grafite);
+    color: var(--cor-fundo);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
