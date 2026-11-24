@@ -48,3 +48,21 @@ select,
 textarea {
     font: inherit;
 }
+
+.wireframeimagem {
+    display: flex;
+    /* Coloca os itens lado a lado */
+    gap: 20px;
+    /* Cria um espaço de 20px entre as imagens */
+    justify-content: center;
+    /* Centraliza as imagens na tela (opcional) */
+    align-items: center;
+    /* Alinha as imagens pelo centro vertical */
+}
+
+.wireframeimagem img {
+    max-width: 48%;
+    /* Garante que cada imagem ocupe quase metade da tela */
+    height: auto;
+    /* Mantém a proporção original sem distorcer */
+}
