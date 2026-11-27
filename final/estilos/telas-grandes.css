@@ -1,40 +1,67 @@
 /* =========================================
-   TELAS GRANDES - DESKTOP E TABLETS
+   TELAS GRANDES - DESKTOP E TABLETS Projeto - Final
    ========================================= */
-@media (min-width: 768px) {
-    header {
-        justify-content: space-between;
-    }
 
-    .hero img {
-        height: 420px;
-    }
+   @media (min-width: 768px) {
 
-    .cartoes {
-    grid-template-columns: repeat(4, 1fr);
-    }
-
-    .filtro,
-    .destaques {
-        padding: 2rem;
+    #botao-menu {
+        display: none;
     }
     
-    nav#menu-principal {
-       display: block;
-       position: static;
-       width: auto;
-       background: none;
-       border-top: 0;
+    /* Hero altura Desktop */
+    .hero img {
+            height: 620px; /* altura no desktop */
+            
     }
-
-    nav#menu-principal ul {
-       flex-direction: row;
-       gap: 1rem;
+    nav#menu-principal {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        margin-left: auto;   /* menu à direita, como no wireframe */
+        background: none;
+        border-top: none;
     }
 
     nav#menu-principal a {
-       border-bottom: 0;
-       padding: 0.5rem 1rem;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
     }
+    
+    nav#menu-principal a.ativo,
+    nav#menu-principal a:hover,
+    nav#menu-principal a:focus-visible { /* Foco no menu*/
+       background-color: var(--cor-amarelo);
+       color: var(--cor-grafite);
+   }
 
+   
+  /* =====================================
+       3. RODAPÉ
+       ===================================== */
+
+    .rodape-conteudo {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+        /* Se ainda não fez: cartões em 4 colunas e mais espaço, como no wireframe */
+    .cartoes {
+        grid-template-columns: repeat(4, 1fr); /* wireframe*/
+    }
+    
+    .filtro,
+    .destaques {
+        padding: 2rem;
+    }        
 }    
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 650px;
+        /* Defina a altura exata desejada (ex: 100px menor que o padrão) */
+        max-width: auto;
+        /* Opcional: limita a largura máxima e centraliza */
+        margin: 0 auto;
+    }
+}

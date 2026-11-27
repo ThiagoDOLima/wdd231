@@ -1,5 +1,5 @@
 /* =========================================
-   TELAS PEQUENAS - CÂMARA DE COMÉRCIO - Final
+   TELAS PEQUENAS - Projeto - Final
    ========================================= */
 
    /* 1. VARIÁVEIS E CONFIGURAÇÕES GERAIS */
@@ -27,6 +27,8 @@ body {
     line-height: 1.5;
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
+    
+    
 }
 
 h1,
@@ -58,8 +60,10 @@ header {
     position: relative;
     gap: 1rem;
     width: 100%;  /* faz o container ocupar a linha toda */
-    max-width: 1200px;
+    max-width: auto; /* Deixa meu menu todo preenchido*/
     margin: 0 auto;
+    position: sticky;
+    
 }
 /* Div Cabeçalho e botão hamburque*/
 
@@ -173,10 +177,60 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
+.hero {
+    position: relative;    /* Prende o .hero-cta dentro desta div */
+    width: 100%;
+    overflow: hidden;
+}
 .hero img {
     width: 100%;
-    object-fit: cover;
+    height: 320px; /* altura no celular */
+    object-fit: cover; /* corta a imagem em vez de esticar */
+    object-position: center;
+    display: block; /* Remove espaço branco fantasma abaixo da imagem */
+}
+
+/* O que vai ficar por cima da imagem do hero */
+.hero-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(43, 45, 49, 0.9);
+    color: var(--cor-fundo);
+    padding: 1.5rem;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;  /* Evita que fique largo demais em telas maiores */
+    border-radius: 8px;
+    border: 2px solid var(--cor-amarelo);
+    box-sizing: border-box; /* Garante que o padding não estoure os 90% de largura */
+}
+
+.hero-cta h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--cor-amarelo);
+}
+/* Botão dentro da frase principal */
+.botao-primario {
+    display: inline-block;
+    background-color: var(--cor-amarelo);
+    color: var(--cor-grafite);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.botao-primario:hover,
+.botao-primario:focus-visible {
+    background-color: var(--cor-fundo);
+    color: var(--cor-grafite);
 }
 
 .filtro,
@@ -211,4 +265,45 @@ nav ul {
     /* Garante que cada imagem ocupe quase metade da tela */
     height: auto;
     /* Mantém a proporção original sem distorcer */
+}
+
+
+/* =========================================
+   8. RODAPÉ
+   ========================================= */
+
+footer {
+    background-color: var(--cor-grafite);
+    color: var(--cor-fundo);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.rodape-conteudo img {
+    width: 200px;
+    /* Ajuste esse valor conforme o tamanho desejado */
+    height: auto;
+    /* Mantém a proporção original sem distorcer o logo */
+}
+footer a {
+    color: var(--cor-fundo);
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus-visible {
+    color: var(--cor-amarelo);
+}
+
+footer h2,
+footer h3 {
+    color: var(--cor-amarelo);
 }
