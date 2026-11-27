@@ -1,0 +1,40 @@
+/* =========================================
+   TELAS GRANDES - DESKTOP E TABLETS
+   ========================================= */
+@media (min-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .hero img {
+        height: 420px;
+    }
+
+    .cartoes {
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+    .filtro,
+    .destaques {
+        padding: 2rem;
+    }
+    
+    nav#menu-principal {
+       display: block;
+       position: static;
+       width: auto;
+       background: none;
+       border-top: 0;
+    }
+
+    nav#menu-principal ul {
+       flex-direction: row;
+       gap: 1rem;
+    }
+
+    nav#menu-principal a {
+       border-bottom: 0;
+       padding: 0.5rem 1rem;
+    }
+
+}    

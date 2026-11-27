@@ -4,67 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejamento do Site - Rota SP</title>
-    <link rel="stylesheet" href="estilos/normal.css">
-    <link rel="stylesheet" href="estilos/telas-pequenas.css">
-    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <title>Rota SP | Escapadas de fim de semana</title>
+    <meta name="description" content="[uma frase sua sobre o site]">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <link rel="icon" href="imagens/favicon.ico">
+
+    <!-- Google Fonts ok -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/normal.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="estilos/telas-grandes.css" media="(min-width: 768px)">
+
+    <!-- Script específico da Página Inicial -->
+    <script src="scripts/inicio.js" defer></script>
+
 </head>
 
 <body>
     <header>
-        <h1>Planejamento do Site: Rota SP</h1>
-    </header>
-    <main>
-        <section id="nome">
-            <h2>Nome do Site </h2>
-            <p>Este nome representa liberdade a partir de São Paulo: escapadas de fim de semana para quem quer ir para um lugar
-            tranquilo.</p>
-        </section>
-        <section id="finalidade">
-            <h2>Finalidade do Site</h2>
-            <p>O site fornece um centro de roteiros de fim de semana, listando cidades e passeios perto de São Paulo, com distância,
-            tempo de viagem, custo estimado e tipo de programa. O visitante pode filtrar os destinos, salvar os favoritos e usar o
-            formulário de contato para sugerir um novo destino ou pedir ajuda para montar um roteiro.</p>
-        </section>
-        <section id="cenarios">
-            <h2>Cenários</h2>
-            <ul>
-                <li>Quais destinos perto de São Paulo têm estrutura para crianças pequenas e são fáceis de visitar num fim de semana com a
-                família?</li>
-                <li>Como encontro um destino que acomode um grupo grande de amigos, e a quem peço ajuda para montar o roteiro?</li>
-            </ul>
-        </section>
-        <section id="cores">
-            <h2>Esquema de Cores</h2>
-            <!-- amostras de cor + onde cada uma será usada -->
-            Cinza-grafite #2B2D31: fundo do cabeçalho e rodapé, títulos.
-            Amarelo #F2B705: botões, links e destaques, como o filtro e os favoritos.
-            Branco-gelo #F7F7F5: fundo das páginas e dos cartões.
-            Texto #222222: parágrafos.
-            Âmbar escuro (opcional) #8A6400 links dentro do conteúdo, sobre fundo claro
-        </section>
-        <section id="tipografia">
-            <h2>Tipografia</h2>
-            Oswald nos títulos: letras altas e condensadas, que lembram placas de estrada. Combina com o tema "Rota".
-            Roboto no corpo: neutra e muito legível em telas pequenas.
-        </section>
-        <section id="wireframe">
-            <h2>Wireframe</h2>
-            <!-- <img> do esboço pequeno e do grande, com alt -->
-            <div class="wireframeimagem">
-            <img src="imagens/Celular.jpeg">
-            <img src="imagens/Computador.jpeg">   
-            </div>
+        <div class="cabecalho">
+            <a class="marca" href="index.html">
+                <img src="imagens/images1.ico" alt="" >
+                Rota SP
+            </a>            
             
+            <!-- Botão Menu Projeto Final Telas Pequenas-->
+            
+            <button id="botao-menu" 
+                aria-label="Abrir 
+                menu de navegação" 
+                aria-expanded="false" 
+                aria-controls="menu-principal">
+                ☰
+            </button>
+
+            <nav id="menu-principal" aria-label="Menu principal">
+                <a href="index.html" class="ativo" arial-current="page">Início</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>    
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="imagens/hero.webp" alt="[descreva a imagem]" width="1200" height="600">
+        </section>
+
+        <section class="filtro">
+            <h2>Escolha sua próxima viagem</h2>
+            <form action="destinos.html">
+                <label for="tipo">Tipo de programa</label>
+                <select id="tipo" name="tipo">
+                    <option value="">Todos</option>
+                    <option value="natureza">Natureza</option>
+                    <option value="historia">História</option>
+                    <option value="gastronomia">Gastronomia</option>
+                </select>
+                <!-- repita label + select para os outros campos do seu wireframe -->
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="destaques">
+            <h2>Roteiros em destaque</h2>
+            <div class="cartoes">
+                <article class="cartao">
+                    <img src="imagens/destino1.webp" alt="[descreva]" width="400" height="300" loading="lazy">
+                    <h3>[Nome do destino]</h3>
+                    <p>[distância] · [tempo de viagem]</p>
+                    <p>[custo estimado]</p>
+                    <a href="destinos.html">Ver detalhes</a>
+                </article>
+                <!-- repita o <article> para os outros roteiros -->
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>Thiago de Oliveira Lima</p>
+        <p>[texto do rodapé]</p>
+        <nav aria-label="Redes sociais">
+            <a href="#" aria-label="[nome da rede]">[ícone]</a>
+        </nav>
     </footer>
 </body>
 

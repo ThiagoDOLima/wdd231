@@ -1,0 +1,214 @@
+/* =========================================
+   TELAS PEQUENAS - CÂMARA DE COMÉRCIO - Final
+   ========================================= */
+
+   /* 1. VARIÁVEIS E CONFIGURAÇÕES GERAIS */
+:root {
+    --cor-grafite: #2B2D31;
+    --cor-amarelo: #F2B705;
+    --cor-fundo: #F7F7F5;
+    --cor-texto: #222222;
+    --cor-link: #8A6400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Oswald", Arial, sans-serif;
+    color: var(--cor-grafite);
+}
+
+a {
+    color: var(--cor-link);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   2. CABEÇALHO E NAVEGAÇÃO
+   ========================================= */
+header {
+    display: flex;
+    flex-direction: row;
+    /* tire o "column" que sugeri antes */
+    justify-content: space-between;
+    /* logo na esquerda, botão na direita */
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    width: 100%;  /* faz o container ocupar a linha toda */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Div Cabeçalho e botão hamburque*/
+
+.cabecalho {
+    display: flex;    
+    align-items: center;
+    gap: 1rem;
+    width: 100%;   /* ocupa a linha toda, então o botão vai para a ponta */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nome Rota SP*/
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+    color: var(--cor-fundo);
+    text-decoration: none;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.marca img {
+    height: 52px;
+    /* aumente ou diminua aqui a imegem do logo*/
+    width: auto;
+}
+
+#botao-menu {
+    margin-left: auto; /* empurra o botão para a direita */
+    background: none;
+    border: 2px solid var(--cor-amarelo);
+    color: var(--cor-amarelo);
+    font-size: 1.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer; 
+
+}
+nav#menu-principal {
+    display: none;
+    background-color: var(--cor-grafite);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-top: 1px solid rgba(247, 247, 245, 0.15);
+}
+
+nav#menu-principal.aberto {
+    display: block;
+}
+
+
+nav#menu-principal a {
+    display: block;
+    color: var(--cor-fundo);
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(247, 247, 245, 0.15);
+    font-weight: 500;
+}
+
+nav#menu-principal a.ativo,
+nav#menu-principal a:hover,
+nav#menu-principal a:focus-visible {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-grafite);
+    font-weight: 700;
+}
+
+   
+button {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-grafite);
+    border: 0;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+}
+
+header,
+footer {
+    background-color: var(--cor-grafite);
+    color: var(--cor-fundo);
+    padding: 1rem;
+}
+
+header a,
+footer a {
+    color: var(--cor-fundo);
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    color: var(--cor-amarelo);
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.filtro,
+.destaques {
+    padding: 1rem;
+}
+
+.cartoes {
+    display: grid;
+    gap: 1rem;
+}
+
+.cartao {
+    background-color: var(--cor-fundo);
+    border: 1px solid #D9D9D4;
+    padding: 1rem;
+}
+
+.wireframeimagem {
+    display: flex;
+    /* Coloca os itens lado a lado */
+    gap: 20px;
+    /* Cria um espaço de 20px entre as imagens */
+    justify-content: center;
+    /* Centraliza as imagens na tela (opcional) */
+    align-items: center;
+    /* Alinha as imagens pelo centro vertical */
+}
+
+.wireframeimagem img {
+    max-width: 48%;
+    /* Garante que cada imagem ocupe quase metade da tela */
+    height: auto;
+    /* Mantém a proporção original sem distorcer */
+}

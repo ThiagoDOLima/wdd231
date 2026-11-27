@@ -1,9 +1,3 @@
-:root {
-    --cor-grafite: #2B2D31;
-    --cor-amarelo: #F2B705;
-    --cor-fundo: #F7F7F5;
-    --cor-texto: #222222;
-}
 
 *,
 *::before,
@@ -18,23 +12,9 @@ html {
 body {
     margin: 0;
     font-family: "Roboto", Arial, sans-serif;
-    line-height: 1.5;
-    color: var(--cor-texto);
-    background-color: var(--cor-fundo);
 }
 
-h1,
-h2,
-h3 {
-    font-family: "Oswald", Arial, sans-serif;
-    color: var(--cor-grafite);
-}
 
-header,
-footer {
-    background-color: var(--cor-grafite);
-    color: var(--cor-fundo);
-}
 
 img {
     max-width: 100%;
@@ -47,22 +27,4 @@ input,
 select,
 textarea {
     font: inherit;
-}
-
-.wireframeimagem {
-    display: flex;
-    /* Coloca os itens lado a lado */
-    gap: 20px;
-    /* Cria um espaço de 20px entre as imagens */
-    justify-content: center;
-    /* Centraliza as imagens na tela (opcional) */
-    align-items: center;
-    /* Alinha as imagens pelo centro vertical */
-}
-
-.wireframeimagem img {
-    max-width: 48%;
-    /* Garante que cada imagem ocupe quase metade da tela */
-    height: auto;
-    /* Mantém a proporção original sem distorcer */
 }
